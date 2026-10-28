@@ -1,4 +1,4 @@
-# FRME-GNN v2 — Fair, Robust, Masked and Experience-Aware Graph Learning
+# FRME-GNN — Fair, Robust, Masked and Experience-Aware Graph Learning
 
 **Status: executable research scaffold, NOT benchmark-validated, NOT a reproduction of FairGNN, PGExplainer, GeoXGNN or FedWeIT.**
 
