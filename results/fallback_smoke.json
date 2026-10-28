@@ -1,0 +1,36 @@
+[
+  {
+    "seed": 0,
+    "graph_bridge": {
+      "route": "features",
+      "attempts": [],
+      "chosen": "features",
+      "reason": "no_structurally_valid_graph",
+      "validation_graph_auc": null,
+      "validation_feature_auc": 0.6153846153846154
+    },
+    "explanation": {
+      "status": "not_applicable_feature_fallback",
+      "learned": null
+    },
+    "previous_task_before": {
+      "f1": 0.34782608695652173,
+      "balanced_accuracy": 0.5753968253968254,
+      "mcc": 0.20602334873357925,
+      "dp_gap": 0.3333333333333333,
+      "auc": 0.6785714285714286,
+      "auprc": 0.7354886615425429,
+      "eo_gap": 0.4444444444444444
+    },
+    "previous_task_after": {
+      "f1": 0.48,
+      "balanced_accuracy": 0.6309523809523809,
+      "mcc": 0.3142857142857143,
+      "dp_gap": 0.4666666666666667,
+      "auc": 0.7738095238095238,
+      "auprc": 0.7911460277004653,
+      "eo_gap": 0.6666666666666666
+    },
+    "old_task_auc_forgetting": -0.09523809523809523
+  }
+]

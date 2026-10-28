@@ -1,0 +1,133 @@
+[
+  {
+    "seed": 0,
+    "bridge": {
+      "route": "original",
+      "attempts": [
+        {
+          "route": "original",
+          "gate": {
+            "accepted": true,
+            "reason": "structurally_valid",
+            "nodes": 160,
+            "edges": 724,
+            "isolated_fraction": 0.0,
+            "components": 1,
+            "self_loops": 0,
+            "duplicate_edges": 0
+          }
+        }
+      ],
+      "graph_utility_route": "graph"
+    },
+    "joint_validation": {
+      "fairness": {
+        "module": "fairness",
+        "passed": false,
+        "route": "reference",
+        "reason": "fairness_or_utility_violation",
+        "measurements": {
+          "auc": 0.9676113360323887,
+          "dp_gap": 0.14285714285714285,
+          "eo_gap": 0.3333333333333333
+        }
+      },
+      "robustness": {
+        "module": "robustness",
+        "passed": true,
+        "route": "candidate",
+        "reason": "stability_constraints_met",
+        "measurements": {
+          "preservation": 0.9625,
+          "probability_drift": 0.008415770158171654
+        }
+      },
+      "selected": "reference_checkpoint",
+      "reference_metrics": {
+        "f1": 0.14285714285714285,
+        "balanced_accuracy": 0.5384615384615384,
+        "mcc": 0.21713222235566895,
+        "dp_gap": 0.07142857142857142,
+        "auc": 0.9635627530364372,
+        "auprc": 0.9583092346250242,
+        "eo_gap": 0.16666666666666666
+      },
+      "candidate_metrics": {
+        "f1": 0.26666666666666666,
+        "balanced_accuracy": 0.5769230769230769,
+        "mcc": 0.31214723679042466,
+        "dp_gap": 0.14285714285714285,
+        "auc": 0.9676113360323887,
+        "auprc": 0.9706959706959707,
+        "eo_gap": 0.3333333333333333
+      },
+      "note": "Fallback checkpoint is not certified fair or robust; report all failed gates."
+    },
+    "explanation": {
+      "status": "abstain",
+      "gate": {
+        "module": "explanation",
+        "passed": false,
+        "route": "abstain",
+        "reason": "mask_integrity_or_random_control_failure",
+        "measurements": {
+          "score_std": 0.03266841173171997,
+          "random_minus_learned_sufficiency_mae": 0.00044691748917102814
+        }
+      },
+      "diagnostics": {
+        "learned": {
+          "sufficiency_mae": 0.026714427396655083,
+          "comprehensiveness_mae": 0.027897071093320847,
+          "retained_edges": 362
+        },
+        "random": {
+          "sufficiency_mae": 0.02716134488582611,
+          "comprehensiveness_mae": 0.014564559794962406,
+          "retained_edges": 362
+        },
+        "degree": {
+          "sufficiency_mae": 0.030595704913139343,
+          "comprehensiveness_mae": 0.023121191188693047,
+          "retained_edges": 362
+        },
+        "scores": {
+          "std": 0.03266841173171997,
+          "span": 0.15975475311279297,
+          "near_constant": false
+        },
+        "order_invariant": true,
+        "prediction": {
+          "f1": 0.10526315789473684,
+          "balanced_accuracy": 0.5277777777777778,
+          "mcc": 0.15839698777049716,
+          "dp_gap": 0.058823529411764705,
+          "auc": 0.9642857142857142,
+          "auprc": 0.9743923857787883,
+          "eo_gap": 0.1111111111111111
+        },
+        "stable_common_edge_jaccard": null,
+        "prediction_preservation_rate": 0.96875
+      }
+    },
+    "retention": {
+      "module": "past_learning",
+      "passed": true,
+      "route": "updated_model",
+      "reason": "retention_within_tolerance",
+      "measurements": {
+        "old_task_auc_forgetting": -0.0080971659919028
+      }
+    },
+    "test_metrics": {
+      "f1": 0.56,
+      "balanced_accuracy": 0.6944444444444444,
+      "mcc": 0.4666666666666667,
+      "dp_gap": 0.1607843137254902,
+      "auc": 0.9801587301587301,
+      "auprc": 0.9879227053140096,
+      "eo_gap": 0.33333333333333337
+    },
+    "warning": "Synthetic demonstration; no method outperformance established."
+  }
+]

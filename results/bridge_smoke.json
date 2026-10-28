@@ -1,0 +1,81 @@
+[
+  {
+    "seed": 0,
+    "graph_bridge": {
+      "route": "original",
+      "attempts": [
+        {
+          "route": "original",
+          "gate": {
+            "accepted": true,
+            "reason": "structurally_valid",
+            "nodes": 160,
+            "edges": 724,
+            "isolated_fraction": 0.0,
+            "components": 1,
+            "self_loops": 0,
+            "duplicate_edges": 0
+          }
+        }
+      ],
+      "chosen": "graph",
+      "reason": "graph_validated",
+      "validation_graph_auc": 0.9109311740890689,
+      "validation_feature_auc": 0.6153846153846154
+    },
+    "explanation": {
+      "learned": {
+        "sufficiency_mae": 0.02137712389230728,
+        "comprehensiveness_mae": 0.023479169234633446,
+        "retained_edges": 362
+      },
+      "random": {
+        "sufficiency_mae": 0.02195402979850769,
+        "comprehensiveness_mae": 0.01244669035077095,
+        "retained_edges": 362
+      },
+      "degree": {
+        "sufficiency_mae": 0.024432970210909843,
+        "comprehensiveness_mae": 0.019623102620244026,
+        "retained_edges": 362
+      },
+      "scores": {
+        "std": 0.04272513464093208,
+        "span": 0.20703911781311035,
+        "near_constant": false
+      },
+      "order_invariant": true,
+      "prediction": {
+        "f1": 0.0,
+        "balanced_accuracy": 0.5,
+        "mcc": 0.0,
+        "dp_gap": 0.0,
+        "auc": 0.9523809523809523,
+        "auprc": 0.9656622611753405,
+        "eo_gap": 0.0
+      },
+      "stable_common_edge_jaccard": 0.8797814249992371,
+      "prediction_preservation_rate": 1.0,
+      "status": "candidate"
+    },
+    "previous_task_before": {
+      "f1": 0.0,
+      "balanced_accuracy": 0.5,
+      "mcc": 0.0,
+      "dp_gap": 0.0,
+      "auc": 0.9523809523809523,
+      "auprc": 0.9656622611753405,
+      "eo_gap": 0.0
+    },
+    "previous_task_after": {
+      "f1": 0.56,
+      "balanced_accuracy": 0.6944444444444444,
+      "mcc": 0.4666666666666667,
+      "dp_gap": 0.1607843137254902,
+      "auc": 0.976190476190476,
+      "auprc": 0.9861111111111112,
+      "eo_gap": 0.33333333333333337
+    },
+    "old_task_auc_forgetting": -0.023809523809523725
+  }
+]

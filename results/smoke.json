@@ -1,0 +1,58 @@
+[
+  {
+    "seed": 0,
+    "explanation": {
+      "learned": {
+        "sufficiency_mae": 0.018161728978157043,
+        "comprehensiveness_mae": 0.02089530974626541,
+        "retained_edges": 362
+      },
+      "random": {
+        "sufficiency_mae": 0.01698486879467964,
+        "comprehensiveness_mae": 0.011182845570147038,
+        "retained_edges": 362
+      },
+      "degree": {
+        "sufficiency_mae": 0.018855687230825424,
+        "comprehensiveness_mae": 0.016151390969753265,
+        "retained_edges": 362
+      },
+      "scores": {
+        "std": 0.051323819905519485,
+        "span": 0.26717227697372437,
+        "near_constant": false
+      },
+      "order_invariant": true,
+      "prediction": {
+        "f1": 0.0,
+        "balanced_accuracy": 0.5,
+        "mcc": 0.0,
+        "dp_gap": 0.0,
+        "auc": 0.8809523809523809,
+        "auprc": 0.911684202927753,
+        "eo_gap": 0.0
+      },
+      "stable_common_edge_jaccard": 0.90055251121521,
+      "prediction_preservation_rate": 1.0
+    },
+    "previous_task_before": {
+      "f1": 0.0,
+      "balanced_accuracy": 0.5,
+      "mcc": 0.0,
+      "dp_gap": 0.0,
+      "auc": 0.8809523809523809,
+      "auprc": 0.911684202927753,
+      "eo_gap": 0.0
+    },
+    "previous_task_after": {
+      "f1": 0.0,
+      "balanced_accuracy": 0.5,
+      "mcc": 0.0,
+      "dp_gap": 0.0,
+      "auc": 0.9126984126984127,
+      "auprc": 0.9224589252668963,
+      "eo_gap": 0.0
+    },
+    "old_task_auc_forgetting": -0.031746031746031744
+  }
+]
